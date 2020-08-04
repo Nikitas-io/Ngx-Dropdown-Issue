@@ -1,0 +1,17 @@
+<nb-card [size]="'medium'" >
+
+  <nb-card-header>Users</nb-card-header>
+  <nb-card-body>
+    <nb-list>
+      <nb-list-item *ngFor="let user of users">
+        <nb-user name="{{ user.fullName }}" title="{{ user.email }}"></nb-user>
+        <!--
+        <div class="item-buttons">
+          <button nbButton routerLink="/" status="basic" size="small">basic</button>
+          <button nbButton (deleteUser)="deleteUser($event)" status="danger" size="small">Danger</button>
+        </div>
+        -->
+      </nb-list-item>
+    </nb-list>
+  </nb-card-body>
+</nb-card>

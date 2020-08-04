@@ -1,0 +1,18 @@
+<!-- The Main app template -->
+
+<nb-layout>
+  <nb-layout-header fixed>
+    <button id="hamburger-button" nbButton status="info" size="medium" (click)="toggle()">☰</button>
+    <!-- Check if the user is logged in.  -->
+    <nb-user id="user-login" *ngIf="isLoggedIn" name="{{ user.fullName }}" [nbContextMenu]="dropdownItems" nbContextMenuTag="my-context-menu"></nb-user>
+    <button id="user-login" *ngIf="!isLoggedIn" routerLink="/auth/login" nbButton status="primary" size="medium">Login</button>
+  </nb-layout-header>
+
+  <nb-sidebar tag="left">
+      <nb-menu [items]="items"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>
