@@ -50,7 +50,7 @@ StackBlitz (https://stackblitz.com)
 
 Plunker (http://plnkr.co/edit/cpeRJs?p=preview)
 -->
-I've created [this public repository](https://github.com/Nikitas-io/Ngx-Admin-Menu-Issue) so that reviewers can look at the issue thoroughly and I also [deployed the project to Heroku for a live preview](https://nebularmeanstack.herokuapp.com/#/). You can create a new user to try it out yourself.
+I've created this public repository so that reviewers can look at the issue thoroughly and I also [deployed the project to Heroku for a live preview](https://nebularmeanstack.herokuapp.com/#/). You can create a new user to try it out yourself.
 
 The offending code that refers to the Context Menu is located in the **app.component.ts** file:
 ```
